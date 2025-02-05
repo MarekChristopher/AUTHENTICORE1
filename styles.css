@@ -4,18 +4,23 @@ body {
   margin: 20px;
 }
 
+h1 {
+  margin-bottom: 20px;
+}
+
 .video-container {
   position: relative;
-  display: inline-block;
+  display: inline-block; /* Ensures the container wraps around the video/canvas */
 }
 
 video, canvas {
-  border: 2px solid #333;
-  border-radius: 10px;
-}
-
-canvas {
   position: absolute;
   top: 0;
   left: 0;
+  width: 600px; /* Match the width and height of the video */
+  height: 450px;
+}
+
+canvas {
+  z-index: 10; /* Ensure the canvas is on top of the video */
 }
