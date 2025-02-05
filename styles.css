@@ -1,24 +1,11 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
 }
 
-h1 {
-    margin-bottom: 20px;
-}
-
-video {
-    border: 2px solid #ddd;
-}
-
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none; /* Allows clicking through the canvas */
+video, canvas {
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 10px;
 }
