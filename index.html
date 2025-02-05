@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Face Detection with Face-API.js</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Detection with face-api.js</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Face Detection Example</h1>
-    
-    <!-- Video Feed -->
-    <video id="videoInput" width="640" height="480" autoplay></video>
+  <h1>Face Detection with face-api.js</h1>
+  <video id="video" width="600" height="450" autoplay muted></video>
+  <canvas id="canvas" width="600" height="450"></canvas>
 
-    <!-- Canvas for drawing anchor points -->
-    <canvas id="canvas" width="640" height="480"></canvas>
-
-    <!-- Load face-api.js from CDN (Ensure this is before your custom script) -->
-    <script src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
-
-    <!-- Load your custom script after face-api.js -->
-    <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/face-api.js/dist/face-api.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
