@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Face Tracking Demo</title>
+    <title>Face Detection with Face-API.js</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Face Tracking Demo</h1>
-        <div id="video-container">
-            <video id="video" width="720" height="560" autoplay muted></video>
-            <canvas id="canvas" width="720" height="560"></canvas>
-        </div>
-        <button id="start-button">Start Camera</button>
-    </div>
+    <h1>Face Detection Example</h1>
+    
+    <!-- Video Feed -->
+    <video id="videoInput" width="640" height="480" autoplay></video>
+
+    <!-- Canvas for drawing anchor points -->
+    <canvas id="canvas" width="640" height="480"></canvas>
+
     <script src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
     <script src="script.js"></script>
 </body>
