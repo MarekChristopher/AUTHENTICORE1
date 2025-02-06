@@ -50,6 +50,52 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Separator */
+.separator {
+  width: 85%;
+  border: 1px solid #ccc; /* Light grey color */
+  margin: 20px auto;
+}
+
+/* Text section */
+.text-content {
+  width: 85%;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.text-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.text-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.text-content li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.text-content strong {
+  font-weight: bold;
+}
+
+.text-content em {
+  font-style: italic;
+}
+
 /* Video container styles */
 .container {
   display: flex;
@@ -77,4 +123,8 @@ canvas {
   z-index: 10;
 }
 
-/* Footer or additional text
+/* Footer or additional text */
+#tinygrad {
+  margin-top: 20px;
+  font-size: 18px;
+}
