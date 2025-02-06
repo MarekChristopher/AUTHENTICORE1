@@ -17,8 +17,7 @@ function startVideo() {
 
 // Detect faces
 video.addEventListener('play', () => {
-  const canvas = faceapi.createCanvasFromMedia(video);
-  document.body.append(canvas);
+  const canvas = document.getElementById('canvas'); // Use the existing canvas element
   const displaySize = { width: video.width, height: video.height };
   faceapi.matchDimensions(canvas, displaySize);
 
@@ -28,7 +27,8 @@ video.addEventListener('play', () => {
       .withFaceExpressions();
 
     const resizedDetections = faceapi.resizeResults(detections, displaySize);
-    canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
+    const context = canvas.getContext('2d');
+    context.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
     faceapi.draw.drawDetections(canvas, resizedDetections);
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
     faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
